@@ -3,130 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <style>
-        .container
-        {
-            width: 90%;
-            margin: auto;
-            display: flex;
-            justify-content: space-evenly;
+
+        form{
+            border: 5px solid black;
+            margin: 50px 20%;
+            padding: 50px;
+            width: 40%;
+            font-size: 20px;
         }
-        .card{
-            border: 3px solid black;
-            margin:10px ;
-            width: 20%;
-            border-radius: 15px;
-           
+        input{
+            margin: 15px 0px;
         }
-        .card:hover{
-            cursor: pointer;
-            transform: translateY(15px);
-            transition: 0.5s;
-        }
-        .cardImg{
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
-            margin-left: 25%;
-            margin-top: 5px;
-        }
-        .cardImg:hover{
-            transform: rotateZ(360deg);
-            transition: 1s;
-            
-        }
-         .cardHead
-        {
-            text-align: center;
-            background-color:  #f3bdbd;
-            padding: 5px 0px;
-        }
-        .courseName{
-            background-color: #a4dff3;
-            text-align: center;
-        }
-        .card-text{
-            text-align: justify;
-            padding: 10px;
-        }
-        .cardBtn{
-            margin-left: 30%;
-            margin-bottom: 10px;
-            background-color: #f88bde;
-            padding: 5px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .cardBtn:hover{
-            background-color: cyan;
-            transition: 1s;
-            transform: translateY(-10px);
-           
-        }
-    </style>
+        </style>
 </head>
 <body>
-     <div class="navbar" >
-        <div style="width: 50%;text-align: center;">
-            Futuretech Software Training institute
-        </div>
-        <div style="width: 50%;">
-        <nav>
-            <ul style="display: flex;justify-content: space-evenly;">
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about.html">About</a></li>
-                <li>Course</li>
-                <li><a href="students.html">Students</a></li>
-                <li>Login</li>
-            </ul>
+    
+ <form action="index.html" method="get">
+   
+    Enter name : <input type="text" required> <br>
+    Enter Address : <textarea name="" id="" cols="20"></textarea> <br>
+    <label for="uem">Enter Email</label> <input type="email" id="uem" required>
+    <br>
+    Enter   Contact : <input type="tel">
+<br>
+    Enter Age: <input type="number" name="" id=""> <br>
+    Select Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Male">&nbsp;Male
+                 &nbsp;&nbsp;&nbsp;&nbsp;   <input type="radio" name="gender" value="Female">Female <br>
+    Select Qualification: <input type="checkbox"  name="edu">SSC &nbsp;
+        <input type="checkbox" name="edu">HSC 
+        <input type="checkbox" name="edu">Graduate 
+        <input type="checkbox" name="edu">Post Graduate   
+    
 
-        </nav>
-        </div>
-
-
-    </div>
-
-<div class="container">
-    <div class="card">
-       
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx0PHBtdZXdwcBwcu-2X6-s_cZOju1j4yoX526lCBpx0Pb6ROxDbBOOw4&s" alt="image not found" class="cardImg">
-       <h1 class="cardHead">Aditya Kangare</h1>
-        <h2 class="courseName">Course : Java Full Stack</h2>
-        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis illo possimus quam fugit voluptatem aperiam eius cupiditate soluta dolores sunt culpa, sint eligendi voluptatum quae autem quibusdam nostrum molestias!</p>
-        <button class="cardBtn">Read More</button>
-    </div>
-
-     <div class="card">
-       
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx0PHBtdZXdwcBwcu-2X6-s_cZOju1j4yoX526lCBpx0Pb6ROxDbBOOw4&s" alt="image not found" class="cardImg">
-       <h1 class="cardHead">Aditya Kangare</h1>
-        <h2 class="courseName">Course : Java Full Stack</h2>
-        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis illo possimus quam fugit voluptatem aperiam eius cupiditate soluta dolores sunt culpa, sint eligendi voluptatum quae autem quibusdam nostrum molestias!</p>
-        <button class="cardBtn">Read More</button>
-    </div>
-     <div class="card">
-       
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx0PHBtdZXdwcBwcu-2X6-s_cZOju1j4yoX526lCBpx0Pb6ROxDbBOOw4&s" alt="image not found" class="cardImg">
-       <h1 class="cardHead">Aditya Kangare</h1>
-        <h2 class="courseName">Course : Java Full Stack</h2>
-        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis illo possimus quam fugit voluptatem aperiam eius cupiditate soluta dolores sunt culpa, sint eligendi voluptatum quae autem quibusdam nostrum molestias!</p>
-        <button class="cardBtn">Read More</button>
-    </div>
-     <div class="card">
-       
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx0PHBtdZXdwcBwcu-2X6-s_cZOju1j4yoX526lCBpx0Pb6ROxDbBOOw4&s" alt="image not found" class="cardImg">
-       <h1 class="cardHead">Aditya Kangare</h1>
-        <h2 class="courseName">Course : Java Full Stack</h2>
-        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis illo possimus quam fugit voluptatem aperiam eius cupiditate soluta dolores sunt culpa, sint eligendi voluptatum quae autem quibusdam nostrum molestias!</p>
-        <button class="cardBtn">Read More</button>
-    </div>
+    <br>
+     <select name="course" id="">
+        
+        <option value="">FSJD</option>
+        <option value="">Python</option>
+        <option value="" selected disabled>Select Course</option>
 
 
-</div>
+    </select>
+    <br><br><br>
 
 
+   <input type="submit" value="Submit">
+    Enter Password  <input type="password">
+    I accept the terms and conditions <input type="checkbox">
+
+
+ </form>
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </body>
 </html>
